@@ -1,14 +1,30 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 /**
- * useState(0) - tool to do something in react. 
+ * useState(0) - tool to do something in react.
  * It returns count and setCount
  * count - state
- * setCount - method with exclusive rights to change count, no one else can.  
+ * setCount - method with exclusive rights to change count, no one else can.
  */
 
+// let count = 18;
+
 function App() {
-  const [count, setCount] = useState(0);
+
+  // function increase() {
+  //   count += 1;
+  //   console.log(count);
+  // }
+
+  /*
+  function increase(){
+    // let counter = 18;
+    counter += 1;
+    console.log(counter);
+  }
+  */
+
+  const [count, setCount] = useState(10);
 
   function increase() {
     setCount(count + 1);
@@ -29,21 +45,21 @@ function App() {
 
       <p>Counter : {count}</p>
 
-      <button
-      onClick = {increase}
-      >
-        count : {count} 
+      <button onClick={increase}>
+        count : {count}
         💹
       </button>
 
       <button
-      onClick={()=>{setCount(count - 1)}}
+        onClick={() => {
+          setCount(count - 1);
+        }}
       >
-        count : {count} 
+        count : {count}
         📉
       </button>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
