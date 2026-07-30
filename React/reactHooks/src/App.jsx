@@ -17,10 +17,10 @@ function App() {
   // }
 
   /*
+  let count = 18;
   function increase(){
-    // let counter = 18;
-    counter += 1;
-    console.log(counter);
+    count += 1;
+    console.log(count);
   }
   */
 
