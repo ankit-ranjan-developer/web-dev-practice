@@ -22,14 +22,14 @@ function App() {
             Red
           </button>
           <button
-            onClick={()=>change('Green')}
+            onClick={()=>setColor('Green')}
             className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
             style={{ backgroundColor: "green" }}
           >
             Green
           </button>
           <button
-            onClick={()=>change('blue')}
+            onClick={()=>{change('blue');}}
             className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
             style={{ backgroundColor: "blue" }}
           >
